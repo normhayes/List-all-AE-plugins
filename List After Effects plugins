@@ -1,0 +1,27 @@
+tell application "Finder"
+
+ 
+
+  --Confirm
+
+  display dialog "This will generate a list of all plug-ins loaded into After Effects, including version numbers. It will be in a file called AEVers.txt, located itn your Adobe After Effects CC [version] folder. Ok?"
+
+ 
+
+end tell
+
+ 
+
+tell application "Adobe After Effects CC [version]" to activate
+
+tell application "System Events"
+
+key code 114 using {shift down, command down}
+
+ 
+
+ 
+
+ 
+
+end tell
